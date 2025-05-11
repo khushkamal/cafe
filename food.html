@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      font-family: Arial;
+      border: border-box;
+    }
+    .navbar{
+      height: 70px;
+      background-color: #0f1111;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+    .nav-logo{
+      height: 55px;
+      width: 100px;
+    }
+    .logo{
+      background-size: cover;
+      background-image: url("image/ffc\ logo.png");
+      height: 55px; 
+      width: 100%;
+  }
+  .border{
+    border: 1.5px transparent;
+  }
+  .border:hover{
+    border: 1.5px solid white;
+  }
+
+  /** box2 **/
+  .add-first{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 15px;
+  }
+  .add-second{
+    color: #ffffff;
+    font-size: 1rem ;
+    margin-left: 3px;
+  }
+  .add-icon{
+    display: flex;
+    align-items: center;
+  }
+
+  /** box3 **/
+
+
+/* From Uiverse.io by vinodjangid07 */ 
+.InputContainer {
+  width: 210px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-left: 15px;
+  letter-spacing: 0.8px;
+  color: rgb(19, 19, 19);
+  font-size: 13.4px;
+}
+
+  /** box4 **/
+  span{
+    font-size: 0.7rem;
+  }
+
+  .nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  /**panel**/
+  .panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white ;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .panel-ops p {
+    display: inline;
+    margin-left:15px ;
+    
+  }
+
+  .panel-ops{
+    font-size: 0.9rem;
+  }
+
+/**hero section**/
+.hero-section{
+  background-image: url(image/hero\ img.png);
+  background-size: cover;
+  height: 600px;
+  
+}
+
+.hero-msg{
+  background-color: rgb(32, 9, 9);
+  color: rgb(172, 158, 158);
+  height:40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  width: 100%;
+  margin-bottom: 25px; 
+}
+H1{
+  text-align: center;
+}
+
+/**menu section**/
+div.gallery{
+  margin: 12px;
+  border: 2px solid black;
+  float: left;
+  width: 220px;
+}
+
+div.gallery:hover{
+  border: 2px solid #777;
+}
+
+div.gallery img{
+  width: 100%;
+  height: auto;
+}
+div.desc{
+  padding: 15px;
+  text-align: center;
+}
+
+/**footer**/
+
+footer{
+  background-color: #ffffff;
+  padding-top: 0;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .footer{
+   width: 33.3%;
+  }
+  h3{
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .footer-content p{
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+    color: #ecf0f1;
+  }
+  .footer-content ul{
+    text-align: center;
+  }
+  .social-icons{
+    text-align: center;
+    padding: 0;
+  }
+  .social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+  }
+  .social-icons i{
+    color: white;
+    font-size: 25px;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    color: #f18930;
+  }
+  .social-icons i:hover{
+    color: #f18930;
+  }
+  .bottom-bar{
+    background: #f18930;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+  }
+  .bottom-bar p{
+    color: #343434;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+  }
+
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="nav-logo border">
+        <div class="logo"></div>
+      </div>
+
+      <div class="nav-address border">
+        <P class="add-first">Deliver to</P>
+        <div class="add-icon">
+        <i class="fa-solid fa-location-dot"></i>
+          <P class="add-second">India</P>
+        </div>
+      </div>
+
+
+     <!-- From Uiverse.io by vinodjangid07 --> 
+<div class="InputContainer">
+  <input placeholder="Search.." id="input" class="input" name="text" type="text">
+  
+</div>
+
+
+     
+      <div class="nav-singin border">
+        <p><span>Hello, sign in</span></p>
+        <p class="nav-second">Account & Lists</p>
+      </div>
+
+    </div>
+
+    <div class="panel">
+      <div class="panel-ops">
+         <P>HOME</P>
+         <P>MENU</P>
+         <P>ABOUT US</P>
+         <P>CONTACT</P>
+         <P>ORDER</P>
+
+      </div>
+    </div>
+</header>
+
+  <div class="hero-section"></div>
+      <div class="hero-msg">
+        <P>Quick Bites, Big Delights</P>
+      </div>
+
+      <H1>MENU</H1> 
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/2159378763/photo/homemade-chicago-big-baby-cheeseburger.jpg?s=1024x1024&w=is&k=20&c=06Xrl_PBqDeHVSv-3tqhOUI0DN-94SM4IaXaNeQSdeE=">
+          <img src="https://media.istockphoto.com/id/2159378763/photo/homemade-chicago-big-baby-cheeseburger.jpg?s=1024x1024&w=is&k=20&c=06Xrl_PBqDeHVSv-3tqhOUI0DN-94SM4IaXaNeQSdeE=" alt="Burgerr">
+        </a>
+        <div class="desc">BURGER</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/1341504203/photo/fried-momos-dumpling.jpg?s=1024x1024&w=is&k=20&c=z7M1LloPSo747Lr9j0lCn2e6ZxZuw2O8-fRa21punn8=">
+          <img src="https://media.istockphoto.com/id/1341504203/photo/fried-momos-dumpling.jpg?s=1024x1024&w=is&k=20&c=z7M1LloPSo747Lr9j0lCn2e6ZxZuw2O8-fRa21punn8=" alt="MOMOS">
+        </a>
+        <div class="desc">MOMOS</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/1270957163/photo/grilled-chicken-piccata-with-penne-pasta-and-fresh-artisan-bread.jpg?s=612x612&w=0&k=20&c=x8cfXymDLL2riwmURdxqmTWrJeNJECfqp16W14swCgc=">
+          <img src="https://media.istockphoto.com/id/1270957163/photo/grilled-chicken-piccata-with-penne-pasta-and-fresh-artisan-bread.jpg?s=612x612&w=0&k=20&c=x8cfXymDLL2riwmURdxqmTWrJeNJECfqp16W14swCgc=" alt="PASTA">
+        </a>
+        <div class="desc">PASTA</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/184946701/photo/pizza.jpg?s=1024x1024&w=is&k=20&c=L8h3NUxinbmrBkSc7ETJHHxlEn6qYX4xzqIahI1Nh10=">
+          <img src="https://media.istockphoto.com/id/184946701/photo/pizza.jpg?s=1024x1024&w=is&k=20&c=L8h3NUxinbmrBkSc7ETJHHxlEn6qYX4xzqIahI1Nh10=" alt="pizza">
+        </a>
+        <div class="desc">PIZZA</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/894134620/photo/snack-or-appetizer-of-garlic-basil-and-olive-oil-bruschettas.jpg?s=1024x1024&w=is&k=20&c=vC-HYCplmt84c6V5B3ODJUnd3iE-Rtlj3TRaYFGrc2M=">
+          <img src="https://media.istockphoto.com/id/894134620/photo/snack-or-appetizer-of-garlic-basil-and-olive-oil-bruschettas.jpg?s=1024x1024&w=is&k=20&c=vC-HYCplmt84c6V5B3ODJUnd3iE-Rtlj3TRaYFGrc2M=" alt="garlic breed">
+        </a>
+        <div class="desc">GARLIC BREED</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/505168330/photo/cup-of-cafe-latte-with-coffee-beans-and-cinnamon-sticks.jpg?s=1024x1024&w=is&k=20&c=kXeItl86M_hlo05MA5S2fyiMvBIfZanPwzBccgMG8GI=">
+          <img src="https://media.istockphoto.com/id/505168330/photo/cup-of-cafe-latte-with-coffee-beans-and-cinnamon-sticks.jpg?s=1024x1024&w=is&k=20&c=kXeItl86M_hlo05MA5S2fyiMvBIfZanPwzBccgMG8GI=" alt="COFFEE">
+        </a>
+        <div class="desc">CAPPUCCINO</div>
+      </div>
+    
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/157675911/photo/cappuccino-topped-with-swirls-of-chocolate-sauce.jpg?s=612x612&w=0&k=20&c=606NMYMjVnTmpSnJI537_IjW3lqfNJaH7Lc9Qg0BXPU=">
+          <img src="https://media.istockphoto.com/id/157675911/photo/cappuccino-topped-with-swirls-of-chocolate-sauce.jpg?s=612x612&w=0&k=20&c=606NMYMjVnTmpSnJI537_IjW3lqfNJaH7Lc9Qg0BXPU=" alt="COFFEE">
+        </a>
+        <div class="desc">MOCHA</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/918361824/photo/chocolate-fondant-cake.jpg?s=612x612&w=0&k=20&c=478fI0qixN5Qq9DTTk6L--AEQ_nVDaFw47S5V1kBxOY=">
+          <img src="https://media.istockphoto.com/id/918361824/photo/chocolate-fondant-cake.jpg?s=612x612&w=0&k=20&c=478fI0qixN5Qq9DTTk6L--AEQ_nVDaFw47S5V1kBxOY=" alt="CAKE">
+        </a>
+        <div class="desc">CHOCO LAVA CAKE</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/904337728/photo/sweet-homemade-dark-chocolate-layer-cake.jpg?s=612x612&w=0&k=20&c=sjC1PXZjtcIpU2Z7MlPyCxV5Ac05wztbxb_bKDGNZxM=">
+          <img src="https://media.istockphoto.com/id/904337728/photo/sweet-homemade-dark-chocolate-layer-cake.jpg?s=612x612&w=0&k=20&c=sjC1PXZjtcIpU2Z7MlPyCxV5Ac05wztbxb_bKDGNZxM=" alt="PASTRY">
+        </a>
+        <div class="desc">PASTRY</div>
+      </div>
+
+      <div class="gallery">
+        <a target="_blank" href="https://media.istockphoto.com/id/1199607352/photo/sweet-pancakes.jpg?s=612x612&w=0&k=20&c=btHPiC-aq8wyHLXhrDWcPBwMSHZ22xPAb-mo1CaYobI=">
+          <img src="https://media.istockphoto.com/id/1199607352/photo/sweet-pancakes.jpg?s=612x612&w=0&k=20&c=btHPiC-aq8wyHLXhrDWcPBwMSHZ22xPAb-mo1CaYobI=" alt="PANCAKE">
+        </a>
+        <div class="desc">PAN CAKE</div>
+      </div>
+
+      <footer>
+        <div class="container">
+          <div class="footer-container">
+              <h3>Contact Us</h3>
+              <p>phone: +91 9876543210</p>
+              <p>Email: info.fooduu@gmail.com</p>
+              <p>Address: 45 Airport Road, Delhi</p>
+            </div>
+            
+            <div class="footer-content">
+              <h3>Follow Us</h3>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-square-x-twitter"></i></a></li>
+            </div>
+          </div>
+        <div class="bottom-bar">
+          <p>&copy;2025 Fooduu.All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
+       
